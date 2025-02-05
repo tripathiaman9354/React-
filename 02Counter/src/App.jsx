@@ -5,13 +5,16 @@ import './App.css'
 
 function App() {
 
-  let [Counter,setCounter]=useState(10)
+  const [Counter,setCounter]=useState(15)
   // let Counter=51
   const addValue=()=>{ 
     // console.log("Value Added",Math.random()); 
     if(Counter<20){
-    Counter=Counter+1
-    setCounter(Counter)}
+    // Counter=Counter+1
+    setCounter(Counter=>Counter+1)
+    setCounter(Counter=>Counter+1)
+    setCounter(Counter=>Counter+1)
+    setCounter(Counter=>Counter+1)}
     // console.log("Clicked",Counter);
   }
 
